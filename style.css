@@ -7,4 +7,99 @@ html{
 }
 body{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------banner------- */
+
+#banner{
+    height: 100vh;
+    background: linear-gradient(to Right Bottom ,#6128ed 20%, #5c0ee3 80%);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#banner .logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .col-2{
+    flex: 1;
+}
+.container .col-2 h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.container .col-2 h1 span{
+    animation: changeColor 01s infinite;
+}
+@keyframes changeColor{
+    0%{
+        color: #ff4181;
+    }
+    25%{
+        color: #ffce47;
+    }
+    50%{
+        color: purple;
+    }
+    75%{
+        color: crimson;
+    }
+    100%{
+        color: #fff;
+    }
+}
+.container .col-2 h2{
+    font-size: 1.8rem;
+    color: #130f40;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.container .col-2 p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.733);
+    font-weight: 400;
+}
+.container img{
+    width: 100%;
+}
+.primary-btn {
+    padding: 8px 0;
+    color: #130f40;
+    font-size: 1.6rem;
+    background: linear-gradient(to Right , #ff4181 20%, #ffce47 80%);
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 20px 0;
+    width: 160px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primary-btn i{
+    margin-left: 3px;
+}
+.primary-btn:hover{
+    background: linear-gradient(to Right , #ffce47 20%, #ff4181 80%);
+    letter-spacing: 1px;
+    transition: .3s;
+    width: 170px;
 }
