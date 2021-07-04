@@ -189,3 +189,46 @@ footer p{
     font-size: 1.6rem;
     color: #fff;
 }
+
+
+/* ---------responsive design--------- */
+
+@media(max-width:1024px){
+    #banner{
+        height: auto;
+    }
+    .container .col-2 h1{
+        font-size: 4rem;
+    }
+    #feature{
+        min-height: auto;
+        margin: 100px 0 0;
+    }
+    #banner .container .col-2:last-child{
+        margin-bottom: -10px;
+    }
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .container .col-2:first-child{
+        margin: 50px 0;
+    }
+    #banner .container .col-2:first-child{
+        margin-top: 150px;
+        margin-bottom: 0;
+    }
+}
+@media(max-width: 500px){
+    html{
+        font-size: 8px;
+    }
+    .container .col-2 h1,
+    #experience h1{
+        font-size: 3rem;
+    }
+    #feature .container .col-2:last-child {
+        margin-left: 0px;
+    }
+}
