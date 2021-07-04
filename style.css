@@ -39,7 +39,8 @@ body{
 .container .col-2{
     flex: 1;
 }
-.container .col-2 h1{
+.container .col-2 h1,
+#experience h1{
     font-size: 5rem;
     text-transform: uppercase;
     color: #fff;
@@ -96,10 +97,95 @@ body{
 }
 .primary-btn i{
     margin-left: 3px;
+    margin-top: 2px;
 }
 .primary-btn:hover{
     background: linear-gradient(to Right , #ffce47 20%, #ff4181 80%);
     letter-spacing: 1px;
     transition: .3s;
     width: 170px;
+}
+
+/* ------frature-------- */
+
+#feature{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(image/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#feature .container .col-2:last-child{
+    margin-left: 50px;
+}
+#feature .container .col-2 h1{
+    color: #130f40;
+}
+#feature .container .col-2 p{
+    color: #130f40;
+}
+#feature .primary-btn {
+    width: 220px;
+}
+#feature .primary-btn:hover {
+    width: 240px;
+}
+
+/* ---------experience-------- */
+
+#experience{
+    padding: 100px 0;
+    background-image: url(image/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#experience h1{
+    color: #130f40;
+    margin-left: 10%;
+    font-size: 4rem;
+}
+#experience .container .col-2 p{
+    color: #130f40;
+    text-align: justify;
+}
+#experience .container .col-2 h2{
+    font-size: 2.5rem;
+}
+#experience .container .col-2 h3{
+    font-size: 1.8rem;
+    color: orange;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+#experience .container{
+    gap: 40px;
+    margin-top: 50px;
+}
+#experience .container .col-2{
+    padding: 30px 20px;
+    box-shadow: 0px 0px 30px 1px #9999998c;
+    border-radius: 10px;
+    border-left: 1em solid;
+    border-image: linear-gradient(to top, orange 0%, orangered 100%);
+    border-image-slice: 1;
+    overflow: hidden;
+}
+#experience .container .another-border{
+    border-image: linear-gradient(to top, #6128ed 0%, #5c0ee3 100%);
+    border-image-slice: 1;
+    border-left: 1em solid;
+}
+
+/* ------footer------- */
+
+footer{
+    padding: 30px 0;
+    background: #2c3e50;
+    text-align: center;
+}
+footer p{
+    font-size: 1.6rem;
+    color: #fff;
 }
